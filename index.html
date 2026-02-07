@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaglerHub</title>
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        :root {
+            --primary: #5865F2;
+            --accent: #57F287;
+            --bg: #0f0f13;
+            --card-bg: #1e1e26;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #5865F2, #57F287);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #b9bbbe;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .client-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            width: 280px;
+        }
+
+        .client-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 12px 24px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #4752c4;
+        }
+
+        .btn-astra {
+            background-color: var(--accent);
+            color: #000;
+        }
+
+        .btn-astra:hover {
+            background-color: #3ecf6d;
+        }
+
+        .version-tag {
+            font-size: 0.8rem;
+            background: #2f3136;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>EaglerHub</h1>
+    <p>Select your client and start playing directly in your browser.</p>
+
+    <div class="container">
+        <div class="client-card">
+            <h3>Tuff Client</h3>
+            <span class="version-tag">Version 1.12.2</span>
+            <p>Advanced features and better performance for 1.12 enthusiasts.</p>
+            <a href="/clients/tuff/" class="btn">Launch Tuff</a>
+        </div>
+
+        <div class="client-card">
+            <h3>Astra Client</h3>
+            <span class="version-tag">Version 1.8.8</span>
+            <p>The classic competitive experience, optimized for FPS.</p>
+            <a href="/clients/astra/" class="btn btn-astra">Launch Astra</a>
+        </div>
+    </div>
+
+</body>
+</html>
