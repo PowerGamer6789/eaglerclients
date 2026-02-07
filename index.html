@@ -9,6 +9,7 @@
         :root {
             --primary: #5865F2;
             --accent: #57F287;
+            --classic-yellow: #FFD700; /* New color variable */
             --bg: #0f0f13;
             --card-bg: #1e1e26;
             --text: #ffffff;
@@ -86,6 +87,16 @@
             background-color: #3ecf6d;
         }
 
+        /* Added Yellow Style */
+        .btn-classic {
+            background-color: var(--classic-yellow);
+            color: #000;
+        }
+
+        .btn-classic:hover {
+            background-color: #e6c200;
+        }
+
         .version-tag {
             font-size: 0.8rem;
             background: #2f3136;
@@ -113,6 +124,13 @@
             <span class="version-tag">Version 1.8.8</span>
             <p>The classic competitive experience, optimized for FPS.</p>
             <a href="/clients/astra/" class="btn btn-astra">Launch Astra</a>
+        </div>
+
+        <div class="client-card">
+            <h3>Classic Client</h3>
+            <span class="version-tag">Version 1.5.2</span>
+            <p>The original, unmodded 1.5.2 experience.</p>
+            <a href="/clients/classic/" class="btn btn-classic">Launch Classic</a>
         </div>
     </div>
 
